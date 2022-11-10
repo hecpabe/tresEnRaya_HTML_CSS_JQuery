@@ -1,0 +1,134 @@
+
+
+/* ========== ALL ========== */
+body{
+
+    font-family: sans-serif;
+    background-color: rgb(45, 45, 45);
+
+}
+
+/* ========== Home ========== */
+.home{
+
+    /* Center all */
+    justify-content: center;
+    text-align: center;
+
+}
+
+#homeTitle{
+
+    color: red;
+
+}
+
+#homeText{
+
+    color: aliceblue;
+
+}
+
+/* ========== Game ========== */
+.scoreboard-screen{
+
+    /* Set Margin and Border */
+    margin: 10px;
+    border: 1px solid aliceblue;
+
+    /* Set interior margin and Max width to not cover all the screen */
+    padding-left: 10px;
+    padding-right: 10px;
+    width: max-content;
+
+    /* Color palette */
+    background-color: crimson;
+    color: aliceblue;
+
+}
+
+#scoreboardFirstPlayerScore{
+
+    color: aqua;
+
+}
+
+#scoreboardSecondPlayerScore{
+
+    color: greenyellow;
+
+}
+
+.game-screen{
+
+    /* Center all */
+    justify-content: center;
+    text-align: center;
+
+}
+
+#gameScreenTitle{
+
+    color: red;
+
+}
+
+#gameScreenText{
+
+    color: aliceblue;
+
+}
+
+.game-board{
+
+    /* Center Board */
+    display: inline-block;
+    vertical-align: middle;
+    line-height: initial;
+    text-align: left;
+
+}
+
+.game-board-row{
+
+    /* Display rows one below other */
+    display: flex;
+
+}
+
+.game-board-cell{
+
+    /* Set background color and border to difference the cells */
+    background-color: aliceblue;
+    border: 1px solid darkviolet;
+
+    /* Set fixed size to the cells */
+    width: 50px;
+    height: 50px;
+
+    /* ----- Cells Text ----- */
+
+    /* Center cell's text */
+    text-align: center;
+    line-height: 50px;
+
+    /* Text format */
+    color: gray;
+    font-weight: bold;
+    font-size: 50px;
+
+}
+
+.game-board-cell-hover:hover{
+
+    /* Set other color and coursor on hover */
+    background-color: aqua;
+    cursor: pointer;
+
+}
+
+#gameResultsText{
+
+    color: orange;
+
+}

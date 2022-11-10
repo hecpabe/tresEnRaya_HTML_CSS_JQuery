@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tres en Raya</title>
+
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Javascript -->
+    <script src="app.js"></script>
+
+</head>
+<body>
+    
+    <!-- Home -->
+    <div class="home">
+
+        <!-- Title -->
+        <h1 id="homeTitle">Bienvenido a Tres en Raya</h1>
+        <p id="homeText">Seleccione una cantidad de jugadores para continuar</p>
+
+        <!-- Combobox -->
+        <select name="playersNumber" id="playersNumberSelect">
+            <option value="0" selected>0 Jugadores</option>
+            <option value="1">1 Jugador</option>
+            <option value="2">2 Jugadores</option>
+        </select>
+
+        <!-- Button -->
+        <button id="homeContinueButton">Continuar</button>
+
+    </div>
+
+    <!-- Game -->
+    <div class="game">
+
+        <!-- Scoreboard Screen -->
+        <div class="scoreboard-screen">
+
+            <h1 id="scoreboardScreenTitle">Número de Victorias</h1>
+            <p id="scoreboardFirstPlayerScore"></p>
+            <p id="scoreboardSecondPlayerScore"></p>
+
+        </div>
+
+        <div class="game-screen">
+
+            <!-- Title -->
+            <h1 id="gameScreenTitle"></h1>
+            <p id="gameScreenText"></p>
+
+            <!-- Gameboard -->
+            <div class="game-board">
+
+                <div class="game-board-row">
+
+                    <div id="0" class="game-board-cell game-board-cell-hover"></div>
+                    <div id="1" class="game-board-cell game-board-cell-hover"></div>
+                    <div id="2" class="game-board-cell game-board-cell-hover"></div>
+
+                </div>
+
+                <div class="game-board-row">
+
+                    <div id="3" class="game-board-cell game-board-cell-hover"></div>
+                    <div id="4" class="game-board-cell game-board-cell-hover"></div>
+                    <div id="5" class="game-board-cell game-board-cell-hover"></div>
+
+                </div>
+
+                <div class="game-board-row">
+
+                    <div id="6" class="game-board-cell game-board-cell-hover"></div>
+                    <div id="7" class="game-board-cell game-board-cell-hover"></div>
+                    <div id="8" class="game-board-cell game-board-cell-hover"></div>
+
+                </div>
+
+            </div>
+
+            <!-- Results -->
+            <div class="game-results">
+
+                <p id="gameResultsText">Ganador: </p>
+
+            </div>
+
+            <!-- Buttons -->
+            <div class="game-end-buttons">
+
+                <button id="nextGameButton">Volver a Jugar</button>
+                <button id="restartGameButton">Reiniciar</button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
